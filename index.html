@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMSYS - Desenvolvimento de Sites e Sistemas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        /* Animações personalizadas */
+        .navbar, .btn, .hero-text, .services, .contact-form {
+            animation: fadeInUp 1s ease-in-out;
+        }
+        .hero-section {
+            background-image: url('https://via.placeholder.com/1920x1080'); /* Troque pelo banner desejado */
+            background-size: cover;
+            background-position: center;
+            padding: 100px 0;
+        }
+        .hero-text {
+            color: #fff;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+        .btn-custom {
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 50px;
+        }
+        .btn-custom:hover {
+            background-color: #0056b3;
+        }
+        /* Atraso nas animações */
+        .navbar { animation-delay: 0.5s; }
+        .hero-text { animation-delay: 1s; }
+        .services { animation-delay: 1.5s; }
+        .contact-form { animation-delay: 2s; }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top animate__animated animate__fadeInDown">
+        <div class="container">
+            <a class="navbar-brand" href="#">IMSYS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active animate__animated animate__pulse animate__infinite" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Sobre Nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero-section d-flex align-items-center">
+        <div class="container text-center">
+            <h1 class="hero-text animate__animated animate__fadeInUp">Transforme sua ideia em realidade digital com IMSYS</h1>
+            <p class="lead text-white animate__animated animate__fadeInUp">Desenvolvemos websites e sistemas sob medida para alavancar o seu negócio.</p>
+            <a href="#services" class="btn btn-custom btn-lg animate__animated animate__zoomIn">Nossos Serviços</a>
+        </div>
+    </header>
+
+    <!-- Serviços Section -->
+    <section id="services" class="services py-5 text-center">
+        <div class="container">
+            <h2 class="animate__animated animate__fadeInUp">Nossos Serviços</h2>
+            <p class="lead animate__animated animate__fadeInUp">Oferecemos soluções completas para o desenvolvimento de sites e sistemas.</p>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="card h-100 animate__animated animate__fadeInUp">
+                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Desenvolvimento de Sites">
+                        <div class="card-body">
+                            <h5 class="card-title">Desenvolvimento de Sites</h5>
+                            <p class="card-text">Sites responsivos e de alta performance para sua empresa.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 animate__animated animate__fadeInUp" style="animation-delay: 0.5s;">
+                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Sistemas Sob Medida">
+                        <div class="card-body">
+                            <h5 class="card-title">Sistemas Sob Medida</h5>
+                            <p class="card-text">Soluções personalizadas para as necessidades do seu negócio.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 animate__animated animate__fadeInUp" style="animation-delay: 1s;">
+                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Consultoria e Suporte">
+                        <div class="card-body">
+                            <h5 class="card-title">Consultoria e Suporte</h5>
+                            <p class="card-text">Acompanhamento contínuo para garantir o sucesso do seu projeto.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Nós Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center animate__animated animate__fadeInUp">Sobre Nós</h2>
+            <p class="lead text-center animate__animated animate__fadeInUp">A IMSYS é uma empresa inovadora com foco em desenvolvimento de soluções digitais.</p>
+            <p class="text-center animate__animated animate__fadeInUp">Com uma equipe de especialistas, entregamos qualidade e inovação em cada projeto, ajudando nossos clientes a alcançar seus objetivos digitais.</p>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contact" class="contact-form py-5">
+        <div class="container">
+            <h2 class="text-center animate__animated animate__fadeInUp">Entre em Contato</h2>
+            <form class="animate__animated animate__fadeInUp" action="#" method="POST">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <input type="text" class="form-control" placeholder="Seu Nome" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <input type="email" class="form-control" placeholder="Seu Email" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" rows="5" placeholder="Sua Mensagem"></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-custom btn-lg">Enviar Mensagem</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">© 2024 IMSYS. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
